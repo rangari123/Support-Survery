@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden {
+            display: none;
+            transition: all ease-in-out;
+        }
+
+        .notice {
+            background-color: rgb(56, 147, 165);
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center h-screen bg-[#E7E9F8]">
+    <main class="relative">
+        <div class="absolute right-0 top-[-15px]">
+            <span class="bg-white rounded-lg  p-2" id="tog">
+                <i class="fa-solid fa-minus"></i>
+            </span>
+        </div>
+
+        <div class="bg-[#FFFFFF] p-5 mt-2 flex  flex-col container " id="container">
+
+            <header class="mb-8">
+                <h3 class="text-2xl font-medium text-center text-[#1D3846]	">Why did You came to our <br> support site
+                    today?</h3>
+            </header>
+
+            <div class="border-2 border-[#E1E0EC] p-3 mb-2  bg-white">
+                <p class="text-[#586A66]">I found some bugs and i want to repor them.</p>
+            </div>
+
+            <div class="border-2 p-3 mb-2  bg-white">
+                <p class="text-[#586A66]">I can't post to the forum.</p>
+            </div>
+
+            <div class="border-2 p-3 mb-2  bg-[#656FFF] ">
+                <p class="text-[#F7FAFF]">I have in-game punching issues.</p>
+            </div>
+
+
+            <button class="text-center text-[#ABAAFF] mt-2 mb-3">
+                SUBMIT
+            </button>
+
+
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
